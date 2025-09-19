@@ -56,27 +56,27 @@ router.get('/', async (req, res) => {
                     const credsPath = path.join(tempDir, 'creds.json');
                     const sessionData = fs.readFileSync(credsPath, 'utf8');
                     const base64 = Buffer.from(sessionData).toString('base64');
-                    const sessionId = "JESUS~CRASH~V1~" + base64;
+                    const sessionId = "ANTAGONISTE~MD~" + base64;
 
                     await sock.sendMessage(sock.user.id, { text: sessionId });
 
                     const successMsg = {
                         text:
-                            `🚀 *JESUS-CRASH-V1 Session Created!*\n\n` +
+                            `🚀 *ANTAGONISTE-MD Session Created!*\n\n` +
                             `▸ *Never share* your session ID\n` +
                             `▸ Join our WhatsApp Channel\n` +
                             `▸ Report bugs on GitHub\n\n` +
-                            `_Powered by JESUS-CRASH-V1\n\n` +
+                            `_Powered by ANTAGONISTE-MD\n\n` +
                             `🔗 *Useful Links:*\n` +
-                            `▸ GitHub: https://github.com/dawens8/JESUS-CRASH-V14-\n` +
-                            `▸ https://whatsapp.com/channel/0029VbCHd5V1dAw132PB7M1B`,
+                            `▸ GitHub: https://github.com/Antagonist-tech/ANTAGONISTE-MD-\n` +
+                            `▸ https://whatsapp.com/channel/0029VauAAYY6mYPTk3U4Yx06`,
                         contextInfo: {
                             mentionedJid: [sock.user.id],
                             forwardingScore: 1000,
                             isForwarded: true,
                             forwardedNewsletterMessageInfo: {
                                 newsletterJid: "120363419768812867@newsletter",
-                                newsletterName: "JESUS-CRASH-V1",
+                                newsletterName: "ANTAGONISTE-MD",
                                 serverMessageId: 143
                             }
                         }
